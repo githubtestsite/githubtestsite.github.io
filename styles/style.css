@@ -1,0 +1,68 @@
+#slider {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
+}
+
+#slider > div {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    top: 200px;
+    z-index: 99;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#slider > div:hover {
+    background: #000;
+}
+
+#leftarr {
+    left: -100px;
+}
+
+#rightarr {
+    right: -100px;
+}
+
+#slider > img.active {
+    opacity: 100;
+    z-index: 60;
+}
+
+#slider > img {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: 50;
+}
+
+#opisanie > p {
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    font-size: 32px;
+    color: wheat;
+    background: #3a2163;
+    z-index: 10;
+    opacity: 0;
+    transition: all 1s ease;
+    top: 200px;
+    left: 200px;
+}
+
+#opisanie > p.active1 {
+    opacity: 100;
+    top: 500px;
+}
